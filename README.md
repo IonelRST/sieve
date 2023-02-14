@@ -7,9 +7,11 @@ In this project we are building a simple app where we can see the iteration of a
 ## These are the expected values of our app  
 ![Sieve of Eratosthenes expected result view](https://github.com/IonelRST/sieve/blob/main/example/result.png)
 
-
 ## Demo of the project  
 ![Sieve of Eratosthenes demo](https://github.com/IonelRST/sieve/blob/main/example/sieve-of-eratosthenes.gif)
+
+## Live Demo
+[Live Demo](https://ionelrst.github.io/#/)  
 
 ## Possible upgrades  
 The next step for this app could to be add some input to allow users to do their own searches.
