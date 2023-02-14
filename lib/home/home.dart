@@ -121,18 +121,23 @@ class _HomeState extends State<Home> {
       int nextNum = remainingNumbers.first;
       primeNumbers
           .add(Prime(primeNumber: nextNum, primeColor: newPrimeColor()));
+
+      //iteration on numbers to check if it's divisible
       for (var value in numbers) {
         if (value % nextNum == 0) {
           remainingNumbers.remove(value);
         }
         setState(() {});
       }
+      //we have to remove [nextNum] to take the next prime
       remainingNumbers.remove(nextNum);
 
+      //this is only to allow the app to show the process
       await Future.delayed(const Duration(milliseconds: 10));
     }
   }
 
+  //each time we call this function it will return a diferent color
   Color newPrimeColor() {
     Color randomColor = Color(Random().nextInt(4294967296));
     while (primeNumbers
@@ -143,6 +148,8 @@ class _HomeState extends State<Home> {
     return randomColor;
   }
 
+  //[getColorByPrime] returns a color depending on last number that
+  //[num] is divisible for
   Color getColorByPrime(int num) {
     int index = primeNumbers
         .lastIndexWhere((element) => num % element.primeNumber == 0);
