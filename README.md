@@ -12,8 +12,6 @@ If you go to /lib you will find all the code
 ## Demo of the project  
 ![Sieve of Eratosthenes demo](https://github.com/IonelRST/sieve/blob/main/example/sieve-of-eratosthenes.gif)
 
-## Live Demo
-[Live Demo](https://ionelrst.github.io/#/)  
 
 ## Possible upgrades  
 The next step for this app could to be add some input to allow users to do their own searches.
